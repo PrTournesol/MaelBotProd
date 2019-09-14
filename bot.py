@@ -17,9 +17,8 @@ else:
 MAEL_ID = 412934982
 THOMAS = 269118097
 IR2020_CONV = -1001102632442
-MEAL_TOKEN = "538316390:AAFYsBbdq3wAlCbJqjPqpz-xZ1gDqk_pCnE"
-ADE_TOKEN = "632665879:AAENCVKIWo_gjA8pTbACm6ZjTqVO_EZmVa4"
-REAL_MAEL_TESTING_TOKEN = "600140254:AAHChysHYWBSIb3022ffqQFgqhwBHENfZkA"
+SUPERMAEL_TOKEN = "600140254:AAHChysHYWBSIb3022ffqQFgqhwBHENfZkA"
+TESTING_TOKEN = "600140254:AAHChysHYWBSIb3022ffqQFgqhwBHENfZkA"
 WHITELIST = [THOMAS]
 
 
@@ -90,9 +89,9 @@ def handle(msg):
 log.setup_logging()
 logger = logging.getLogger(__name__)
 logger.info('Starting Bot')
-TOKEN = MEAL_TOKEN
+TOKEN = SUPERMAEL_TOKEN
 if test:
-    TOKEN = REAL_MAEL_TESTING_TOKEN
+    TOKEN = TESTING_TOKEN
     logger.info('TESTING MODE---------------------------------------------')
 bot = telepot.Bot(TOKEN)
 MessageLoop(bot, handle).run_as_thread()
