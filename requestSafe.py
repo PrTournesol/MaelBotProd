@@ -48,7 +48,7 @@ class requestSafe:
         try :
             answer = requests.get(self.url,timeout=2)
             answerText = str(answer.text)
-            #print(answerText)
+            print("answerText : "+answerText)
             if (("Le projet est invalide") in answerText):
                 logger.info("Le projet est invalide")
                 adeError= True

@@ -18,7 +18,7 @@ MAEL_ID = 412934982
 THOMAS = 269118097
 IR2020_CONV = -1001102632442
 SUPERMAEL_TOKEN = "600140254:AAHChysHYWBSIb3022ffqQFgqhwBHENfZkA"
-TESTING_TOKEN = "600140254:AAHChysHYWBSIb3022ffqQFgqhwBHENfZkA"
+TESTING_TOKEN = "934949366:AAFI7OlljcZ032Ayzk4kHqd0zqFrTknmqLQ"
 WHITELIST = [THOMAS]
 
 
@@ -92,10 +92,10 @@ logger.info('Starting Bot')
 TOKEN = SUPERMAEL_TOKEN
 if test:
     TOKEN = TESTING_TOKEN
-    logger.info('TESTING MODE---------------------------------------------')
+    logger.info('TESTING MODE---------------------------------------------------------------')
 bot = telepot.Bot(TOKEN)
 MessageLoop(bot, handle).run_as_thread()
-logger.info('Listening ...')
+logger.info('Listening ......................................................................')
 
 # Keep the program running.
 while True:
