@@ -15,13 +15,13 @@ RUN chmod 700 /root/.ssh/id_rsa
 RUN chown -R root:root /root/.ssh
 # make sure your domain is accepted
 RUN touch /root/.ssh/known_hosts
-RUN ssh-keyscan -p 222 git.salinasbroutee.com >> /root/.ssh/known_hosts
+RUN ssh-keyscan -p 222 github.com >> /root/.ssh/known_hosts
 #Problème de timezone
 ENV TZ Europe/Paris
 RUN cp /usr/share/zoneinfo/Europe/Paris /etc/localtime
 
 #Prevent docker cache
 ADD https://time.is/ /tmp/bustcache
-RUN git clone ssh://git@git.salinasbroutee.com:222/thomas/TelegramBot.git
+RUN git clone git@github.com:PrTournesol/MaelBot2.git
 
 CMD python3 TelegramBot/bot.py 

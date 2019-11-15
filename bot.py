@@ -8,6 +8,7 @@ import log
 from telepot.loop import MessageLoop
 import sys
 import jokes
+import tokens
 
 if len(sys.argv)==2 and sys.argv[1]=="test":
     test = True
@@ -17,8 +18,7 @@ else:
 MAEL_ID = 412934982
 THOMAS = 269118097
 IR2020_CONV = -1001102632442
-SUPERMAEL_TOKEN = "600140254:AAHChysHYWBSIb3022ffqQFgqhwBHENfZkA"
-TESTING_TOKEN = "934949366:AAFI7OlljcZ032Ayzk4kHqd0zqFrTknmqLQ"
+
 WHITELIST = [THOMAS]
 
 
