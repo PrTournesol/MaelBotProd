@@ -360,11 +360,5 @@ if test:
     print(room.getAnswer("SALLES A DISPO ?"))
     print(room.getAnswer("SALLES B DISPO ?"))
     print(room.getAnswer("SALLES C DISPO ?"))
-    print(room.getAnswer("SALLES linux DISPO ?"))
-    print(room.getAnswer("SALLES ?"))
-    print(room.getAnswer("SALLES A ?"))
-    print(room.getAnswer("SALLES B ?"))
-    print(room.getAnswer("SALLES C ?"))
-    print(room.getAnswer("SALLES LINUX ?"))
-    print(room.getAnswer("SALLES HELP ?"))
+    print(room.getAnswer("SALLES LINUX DISPO ?"))
 

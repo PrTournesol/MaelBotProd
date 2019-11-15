@@ -15,7 +15,7 @@ class adeGetter:
     def __init__(self):
         splitDay = str(datetime.now().isoformat()).split('T')  # magic
         self.day = splitDay[0]
-        url1 = "https://edt.inp-toulouse.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=509&projectId=20&calType=ical&firstDate=" \
+        url1 = "http://edt.inp-toulouse.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=509&projectId=20&calType=ical&firstDate=" \
             +self.day\
             +"&lastDate="\
             +self.day
