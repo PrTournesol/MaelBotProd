@@ -22,6 +22,6 @@ RUN cp /usr/share/zoneinfo/Europe/Paris /etc/localtime
 
 #Prevent docker cache
 ADD https://time.is/ /tmp/bustcache
-RUN git clone git@github.com:PrTournesol/MaelBot2.git
+RUN git clone git@github.com:PrTournesol/MaelBotProd.git
 
 CMD python3 TelegramBot/bot.py 
