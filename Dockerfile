@@ -7,6 +7,7 @@ RUN pip3 install urllib3
 RUN pip3 install ics
 RUN pip3 install telepot
 RUN pip3 install requests
+RUN pip3 install ade
 # add credentials on build
 ARG SSH_PRIVATE_KEY
 RUN mkdir /root/.ssh/
@@ -22,6 +23,6 @@ RUN cp /usr/share/zoneinfo/Europe/Paris /etc/localtime
 
 #Prevent docker cache
 ADD https://time.is/ /tmp/bustcache
-RUN git clone git@github.com:PrTournesol/MaelBotProd.git
+RUN git clone https://github.com/PrTournesol/MaelBotProd.git
 
-CMD python3 TelegramBot/bot.py 
+CMD python3 MaelBotProd/bot.py 

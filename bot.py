@@ -8,7 +8,7 @@ import log
 from telepot.loop import MessageLoop
 import sys
 import jokes
-import tokens
+from tokens import *
 
 if len(sys.argv)==2 and sys.argv[1]=="test":
     test = True
