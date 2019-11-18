@@ -49,7 +49,7 @@ class adeGetter:
     # Parse the fucking horrible format from an event .begin or .end
     # Also, n7 sucks so +2H because they can't handle timezones
     def parseHour(self, eventHour):
-        return dateutil.parser.parse(str(eventHour)) + timedelta(hours=2)
+        return dateutil.parser.parse(str(eventHour)) + timedelta(hours=1)
 
     # Suboptimal way to store all the classes of current day
     def storeClassesDay(self):
