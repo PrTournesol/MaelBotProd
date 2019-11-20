@@ -262,7 +262,7 @@ class roomGetter:
     # Also, n7 sucks so +2H because they can't handle timezones
 
     def parseHalfHour(self, eventHour):
-        return dateutil.parser.parse(str(eventHour)) + timedelta(hours=2)
+        return dateutil.parser.parse(str(eventHour)) + timedelta(hours=1)
 
     def isEventHappeningOnNextHour(self, event):
         self.deltaCurrentTime = int(self.currentTime) + 60

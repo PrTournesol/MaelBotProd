@@ -107,3 +107,5 @@ ZEP\nZone d'Enseignants Paniqués
 
 toto joke
 une bonne blague c'est null
+"N7
+la blague c'est ENSEEIHT"
